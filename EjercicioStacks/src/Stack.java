@@ -25,13 +25,8 @@ public class Stack {
 			System.out.println(b.queue[i]);
 		}
 		b.delete();
-		b.delete();
-		b.delete();
-		b.delete();
-		b.delete();
-		for (int i = 0; i<b.queue.length;i++) {
-			System.out.println(b.queue[i]);
-		}
+
+		
 		
 	}
 }

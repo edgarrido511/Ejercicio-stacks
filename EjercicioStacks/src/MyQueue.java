@@ -19,19 +19,15 @@ public class MyQueue {
 			tail++;
 		}
 	}
-	public char delete() {
+	public void delete() {
 		if(tail == 0) {
-			System.out.println("la cola esta vacia");
-			return'#';
+			System.out.println("#");
 		}
 		else {
-			char eliminado = queue[0];
-			for(int i = 0; i<tail;i++) {
-				int j = i+1;
-				queue[i] = queue[j];
+			for(int i = 0; i<queue.length-1;i++) {
+				queue[i] = queue[(i+1)];
 			}
-			tail--;
-			return eliminado;
+
 		}
 			
 	}
